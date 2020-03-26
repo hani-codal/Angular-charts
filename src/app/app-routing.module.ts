@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'pie-chart',
+    component : PieChartComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
