@@ -9,12 +9,18 @@ import { ChartsModule } from 'ng2-charts';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GoogleChartsModule } from 'angular-google-charts';
-
+import { GoogleChartMapComponent } from './google-chart-map/google-chart-map.component';
+import { MapDemoComponent } from './map-demo/map-demo.component';
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
     
-    PieChartComponent
+    PieChartComponent,
+    
+    GoogleChartMapComponent,
+    
+    MapDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -23,8 +29,9 @@ import { GoogleChartsModule } from 'angular-google-charts';
     FormsModule,
     ChartsModule,
     HttpClientModule,
-    GoogleChartsModule
-    //WavesModule
+    GoogleChartsModule,
+    //WavesModule,
+    AgmCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
